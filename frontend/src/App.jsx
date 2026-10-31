@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   LayoutDashboard, Users, CreditCard, Package,
   ChartNoAxesCombined, Settings, Search, Bell,
@@ -13,6 +13,7 @@ import {
 import Customers from "./Customers";
 import BrightLoopAI from "./BrightLoopAI";
 import "./App.css";
+import Billing from "./Billing";
 
 // NAVIGATION
 const navigation = [
