@@ -3,6 +3,7 @@ from backend.app.routes.plans import router as plans_router
 from backend.app.routes.customers import router as customers_router
 from backend.app.routes.subscriptions import router as subscriptions_router
 from backend.app.routes.payments import router as payments_router
+from backend.app.routes.dashboard import router as dashboard_router
 
 app = FastAPI(
     title="Brightloop API",
@@ -13,6 +14,7 @@ app.include_router(plans_router)
 app.include_router(customers_router)
 app.include_router(subscriptions_router)
 app.include_router(payments_router)
+app.include_router(dashboard_router)
 
 @app.get("/")
 def home():
